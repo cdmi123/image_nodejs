@@ -21,8 +21,6 @@ router.get('/', function(req, res, next) {
 
 router.post('/',upload.single('multi-files'), (req, res) => {
 
-  console.log(req.file);
-
   res.redirect('/');
 });
 
